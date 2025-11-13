@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#cadestoque" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaPrincipalController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Marca_IFSP_2015_Itp_H/Marca_IFSP_2015_Itp_H/Artboard%201%20copy%209.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="453.0" layoutY="340.0" text="Ana Julia Ferreira">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="453.0" layoutY="364.0" text="Mateus Haidar Carvalho">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Accordion layoutX="-1.0" layoutY="46.0" prefHeight="281.0" prefWidth="202.0">
+        <panes>
+          <TitledPane animated="false" text="Cadastro">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="10.0" layoutY="6.0" onMouseClicked="#cadproduto" text="Cadastrar Produtos" />
+                        <Label layoutX="9.0" layoutY="23.0" onMouseClicked="#cadcategoria" text="Cadastrar Categoria" />
+                        <Label layoutX="10.0" layoutY="40.0" onMouseClicked="#cadfuncionario" text="Cadastrar Funcionários" />
+                        <Label layoutX="9.0" layoutY="57.0" onMouseClicked="#cadcargo" text="Cadastrar Cargos" />
+                        <Label layoutX="9.0" layoutY="74.0" onMouseClicked="#cadfornecedor" text="Cadastrar Fornecedores" />
+                        <Label layoutX="9.0" layoutY="91.0" onMouseClicked="#cadfornecedor" text="Cadastrar Estoque" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" prefHeight="216.0" prefWidth="202.0" text="Gerar Relatório">
+               <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="181.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="6.0" onMouseClicked="#gerarrelatorio" text="Gerar Relatório do Estoque" />
+                     </children>
+                  </AnchorPane>
+               </content>
+          </TitledPane>
+            <TitledPane animated="false" text="Usuário">
+               <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="129.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="8.0" layoutY="6.0" onMouseClicked="#viewusuario" text="Visualizar dados do usuário" />
+                        <Label layoutX="8.0" layoutY="23.0" onMouseClicked="#attusuario" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+        </panes>
+      </Accordion>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="-2.0" prefHeight="48.0" prefWidth="600.0" text="Aplicativo XXX">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
